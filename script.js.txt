@@ -1,0 +1,12 @@
+const quotes = [
+  "Believe in yourself.",
+  "Keep going, you're doing great!",
+  "Don't watch the clock — do what it does. Keep going.",
+  "Your only limit is your mind.",
+  "Push yourself, because no one else is going to do it for you."
+];
+
+function generateQuote() {
+  const randomIndex = Math.floor(Math.random() * quotes.length);
+  document.getElementById("quote").innerText = quotes[randomIndex];
+}
